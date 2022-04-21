@@ -28,11 +28,19 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.slick-dots{bottom: -45px !important;}
+.slick-dots li button{background-color: #3fc264 !important;
+border-radius: 100%; opacity: 1 !important; width: 15px !important; height: 15px !important;}
+.slick-dots li.slick-active button{background-color: #087558 !important;}
+.slick-dots li button::before{display: none !important;}
+
+.testimonials{background-repeat: no-repeat; background-size: cover;}
+.testimonials .slick-prev{left: auto; right: 60px; background-image: url(.././public/images/prev-arrow.png) !important;}
+.testimonials  .slick-next{background-image: url(.././public/images/next-arrow.png) !important; right: 10px;}
+.testimonials .slick-prev, .testimonials  .slick-next{ transform: none; top: -60px; width: 35px;
+ height: 35px;border-radius: 4px; background-color: #ECF9EF !important; background-repeat: no-repeat !important;
+background-position: center center !important;}
+
+.small-img{position: absolute; right: 20px; bottom: -80px;}
+
+.testimonials .slick-prev::before , .testimonials .slick-next::before{display: none;}
